@@ -10,6 +10,8 @@ const savedUsername = localStorage.getItem(USERNAME_KEY)
 function paintGreetings(username) {
   greeting.innerText = `Hello ${username}`
   greeting.classList.remove(HIDDEN_CLASSNAME)
+  document.querySelector('form#todo-form').classList.remove(HIDDEN_CLASSNAME)
+  document.querySelector('ul#todo-list').classList.remove(HIDDEN_CLASSNAME)
 }
 
 function onLoginSubmit(e) {

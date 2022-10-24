@@ -10,7 +10,9 @@ function onGeoSuccess(position) {
       .then((res) => res.json())
       .then((data) => {
         citySpan.innerText = data.name
-        weatherSpan.innerText = `${data.weather[0].main} / ${data.main.temp}`
+        weatherSpan.innerText = `${data.weather[0].main} / ${Math.floor(
+          Number(data.main.temp),
+        )}˚@`
       })
   } catch (e) {
     console.log(e)

@@ -1,7 +1,80 @@
-body {
-  background-color: beige;
+@import url('common.css');
+
+.body-background-div {
+  margin: 0 auto;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.hidden {
-  display: none;
+.weather-div {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.weather-div > span {
+  padding-top: 2vh;
+  font-style: italic;
+}
+
+.weather-div > span:last-child {
+  padding-right: 2vw;
+}
+
+.contents-box {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.greeting-div {
+  margin-bottom: 1vw;
+}
+
+.quote-div {
+  padding-bottom: 10vh;
+}
+
+.quote-div > span {
+  display: block;
+  align-content: center;
+  text-align: center;
+}
+
+.quote-div > span:first-child {
+  font-size: max(calc(2vmin - 5px), 20px);
+  font-style: italic;
+}
+
+.quote-div > span:last-child {
+  font-size: 16px;
+  font-style: italic;
+}
+
+.todo-list-ul {
+  width: 30vw;
+  list-style: none;
+}
+
+.todo-list-ul > li {
+  margin-bottom: 0.3vh;
+  width: 100%;
+  display: flex;
+}
+
+.todo-list-ul > li > span {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 2vmin;
+}
+
+.todo-list-ul > li > button {
+  border: 0px;
+  background: none;
 }
